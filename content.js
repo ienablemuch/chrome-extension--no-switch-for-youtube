@@ -13,6 +13,7 @@ chrome.runtime.onMessage.addListener((message) => {
 
         case 'forward':
             doForward();
+            
             break;
     }
 });
