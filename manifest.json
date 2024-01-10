@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+        "background": {
+        "service_worker": "background.js"
+    },
+    "name": "NoSwitch for YouTube™️",
+    "version": "1.0",
+    "description": "Pause/Play Rewind/Forward YouTube without using Alt+Tab or Command+Tab",
+    "commands": {
+        "do-pause_play": {
+            "suggested_key": {
+                "default": "Alt+P",
+                "mac": "Alt+P"
+            },
+            "description": "Pause/Play"
+        },
+        "do-rewind": {
+            "suggested_key": {
+                "default": "Alt+R",
+                "mac": "Alt+R"
+            },
+            "description": "Rewind"
+        },
+        "do-forward": {
+            "suggested_key": {
+                "default": "Alt+G",
+                "mac": "Command+MacCtrl+G"
+            },
+            "description": "Forward"
+        }
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content.js"],
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
