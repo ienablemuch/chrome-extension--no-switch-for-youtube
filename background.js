@@ -11,17 +11,14 @@ chrome.commands.onCommand.addListener(command => {
 function tellTask(task) {
     // eslint-disable-next-line no-undef
     chrome.tabs.query({ url: 'https://www.youtube.com/*' }, tabs => {
-        console.log('tabs', tabs);
+        // console.log('tabs', tabs);
 
         const activeTab = tabs.filter(e => e.active)?.[0];
 
         if (!activeTab) {
             return;
         }
-        // eslint-disable-next-line no-undef
-        // eslint-disable-next-line no-undef
-        chrome.tabs.sendMessage(activeTab.id, {
-            task
-        });
+
+        chrome.tabs.sendMessage(activeTab.id, { task });
     });
 }
