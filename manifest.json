@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
         "background": {
-        "service_worker": "background.js"
-    },
+            "service_worker": "background.js"
+        },
     "name": "NoSwitch",
     "version": "1.0",
     "description": "Pause/Play Rewind/Forward video tutorials without using Alt+Tab or Command+Tab",
@@ -39,5 +39,9 @@
     ],
     "permissions": [
         "tabs"
-    ]
+    ],
+    "action": {},
+    "icons": {
+        "128": "no-switch--128.png"
+    }
 }
