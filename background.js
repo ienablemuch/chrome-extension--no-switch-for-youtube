@@ -8,17 +8,21 @@ chrome.commands.onCommand.addListener(command => {
     }
 });
 
+// chrome.action.onclicked
+
 function tellTask(task) {
-    // eslint-disable-next-line no-undef
-    chrome.tabs.query({ url: 'https://www.youtube.com/*' }, tabs => {
-        // console.log('tabs', tabs);
+    chrome.tabs.query({active: true, currentWindow: true }, ([theActiveTab]) => {
+        // console.log('theActiveTab', theActiveTab);
 
-        const activeTab = tabs.filter(e => e.active)?.[0];
+        // eslint-disable-next-line no-undef
+        chrome.tabs.query({ }, tabs => {
+            console.log('tabs', tabs);
 
-        if (!activeTab) {
-            return;
-        }
+            const activeTab = tabs.filter(e => e.active)?.[0];
 
-        chrome.tabs.sendMessage(activeTab.id, { task });
+            if (!activeTab) return;
+
+            chrome.tabs.sendMessage(activeTab.id, { task });
+        });
     });
 }

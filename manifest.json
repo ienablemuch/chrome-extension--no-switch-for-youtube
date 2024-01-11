@@ -3,9 +3,9 @@
         "background": {
         "service_worker": "background.js"
     },
-    "name": "NoSwitch for YouTube™️",
+    "name": "NoSwitch",
     "version": "1.0",
-    "description": "Pause/Play Rewind/Forward YouTube without using Alt+Tab or Command+Tab",
+    "description": "Pause/Play Rewind/Forward video tutorials without using Alt+Tab or Command+Tab",
     "commands": {
         "do-pause_play": {
             "suggested_key": {
@@ -32,7 +32,7 @@
     "content_scripts": [
         {
             "run_at": "document_idle",
-            "matches": ["https://www.youtube.com/*"],
+            "matches": ["<all_urls>"],
             "js": ["content.js"],
             "all_frames": true
         }
