@@ -3,28 +3,28 @@
         "background": {
             "service_worker": "background.js"
         },
-    "name": "NoSwitch",
+    "name": "No AltTab Video",
     "version": "1.0",
     "description": "Pause/Play Rewind/Forward video tutorials without using Alt+Tab or Command+Tab",
     "commands": {
         "do-pause_play": {
             "suggested_key": {
-                "default": "Alt+P",
-                "mac": "Alt+P"
+                "default": "Alt+Period",
+                "mac": "MacCtrl+Period"
             },
             "description": "Pause/Play"
         },
         "do-rewind": {
             "suggested_key": {
-                "default": "Alt+R",
-                "mac": "Alt+R"
+                "default": "Alt+Left",
+                "mac": "Command+Left"
             },
             "description": "Rewind"
         },
         "do-forward": {
             "suggested_key": {
-                "default": "Alt+G",
-                "mac": "Command+MacCtrl+G"
+                "default": "Alt+Right",
+                "mac": "Command+Right"
             },
             "description": "Forward"
         }
