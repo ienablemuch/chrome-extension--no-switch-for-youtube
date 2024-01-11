@@ -13,7 +13,7 @@ chrome.commands.onCommand.addListener(command => {
 chrome.action.onClicked.addListener(() => {
     const isEdge = /Edg/i.test(navigator.userAgent);
     const prefix = isEdge ? 'edge' : 'chrome';
-    createTab(`${prefix}://extensions/shortcuts#:~:text=NoSwitch`);
+    createTab(`${prefix}://extensions/shortcuts#:~:text=No%20AltTab%20Video`);
 });
 
 function tellTask(task) {
