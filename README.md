@@ -1,4 +1,4 @@
-Don't want to use Alt+Tab when you want to pause/play/rewind/forward YouTube video tutorial you are watching while actively typing your code?
+Don't want to use Alt+Tab when you want to pause/play rewind/forward the YouTube video tutorial you are watching while actively typing your code?
 
 This extension will let you control YouTube in the comfort of your favorite IDE or code editor
 
