@@ -8,8 +8,8 @@ To use, after installing the extension, paste this in Chrome:
 chrome://extensions/shortcuts#:~:text=NoSwitch%20for%20YouTube
 ```
 
-Then set your own shortcut for these actions:
+Then set your own hotkey for these actions:
 
-![image](https://github.com/ienablemuch/chrome-extension--no-switch-for-youtube/assets/51402350/4fee70fd-2cca-4bed-a220-9ea0c2c480e2)
+![image](https://github.com/ienablemuch/chrome-extension--no-switch-for-youtube/assets/51402350/bc28bf2b-fad6-4fa0-82ab-d2e3f04a1ddf)
 
-Don't forget to change the dropdown from Chrome to Global, otherwise the hotkeys won't work
+Don't forget to change the dropdown from Chrome to Global, otherwise the hotkeys won't work when the active app is not Chrome (e.g., your IDE or text editor)
