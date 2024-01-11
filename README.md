@@ -5,7 +5,7 @@ This extension will let you control YouTube in the comfort of your favorite IDE 
 To use, after installing the extension, paste this in Chrome:
 
 ```
-chrome://extensions/shortcuts#:~:text=NoSwitch%20for%20YouTube
+chrome://extensions/shortcuts#:~:text=No%20AltTab%20Video
 ```
 
 Then set your own hotkey for these actions:
