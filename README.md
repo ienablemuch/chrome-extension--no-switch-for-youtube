@@ -15,6 +15,6 @@ Then set your own hotkey for these actions:
 Don't forget to change the dropdown from Chrome to Global, otherwise the hotkeys won't work when the active app is not Chrome (e.g., your IDE or text editor)
 
 
-Privacy Policy:
+<a name="privacy-policy">Privacy Policy:</a>
 
 No AltTab Video does not collect any information
