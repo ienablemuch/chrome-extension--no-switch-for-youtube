@@ -17,8 +17,8 @@ chrome.action.onClicked.addListener(() => {
 });
 
 function tellTask(task) {
-    chrome.tabs.query({ currentWindow: true }, tabs => {
-        // console.log('tabs', tabs);
+    chrome.tabs.query({  }, tabs => {
+        console.log('tabs', tabs);
 
         const activeTab = tabs.filter(e => e.active)?.[0];
 
