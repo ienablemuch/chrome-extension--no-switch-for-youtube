@@ -4,7 +4,7 @@
             "service_worker": "background.js"
         },
     "name": "No AltTab Video",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Pause/Play Rewind/Forward video tutorials without using Alt+Tab or Command+Tab",
     "commands": {
         "do-pause_play": {
