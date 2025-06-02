@@ -4,7 +4,7 @@
             "service_worker": "background.js"
         },
     "name": "No AltTab Video",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Pause/Play Rewind/Forward video tutorials without using Alt+Tab or Command+Tab",
     "commands": {
         "do-pause_play": {
@@ -17,14 +17,14 @@
         "do-rewind": {
             "suggested_key": {
                 "default": "Alt+Left",
-                "mac": "Command+Left"
+                "mac": "MacCtrl+Left"
             },
             "description": "Rewind"
         },
         "do-forward": {
             "suggested_key": {
                 "default": "Alt+Right",
-                "mac": "Command+Right"
+                "mac": "MacCtrl+Right"
             },
             "description": "Forward"
         }
